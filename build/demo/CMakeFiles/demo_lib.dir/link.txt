@@ -1,0 +1,2 @@
+C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\ar.exe qc libdemo_lib.a CMakeFiles/demo_lib.dir/demo.cpp.obj
+C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\ranlib.exe libdemo_lib.a

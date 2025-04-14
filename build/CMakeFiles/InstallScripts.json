@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/Project/OrderBook-master/build/cmake_install.cmake",
+		"E:/Project/OrderBook-master/build/src/cmake_install.cmake",
+		"E:/Project/OrderBook-master/build/demo/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

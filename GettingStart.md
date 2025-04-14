@@ -204,3 +204,101 @@ tests 目录包含了项目的单元测试。
 OrderBookTest.cpp: 针对 Book, Limit, Order 等核心功能的测试用例。
 tests/lib: 包含了 Google Test 和 Google Mock 测试框架，用于编写和运行测试。运行测试通常在构建后执行类似 make test 或直接运行测试可执行文件。
 
+
+# CMake 命令详解
+
+## 主要 CMake 文件说明
+
+在你的 OrderBook 项目中，CMake 被用来构建整个项目。让我为你解释主要的 CMake 命令及其含义：
+
+### 根目录 CMakeLists.txt
+
+```cmake
+cmake_minimum_required(VERSION 3.28)  // 指定所需的最低CMake版本
+project(OrderBook)                    // 定义项目名称为OrderBook
+
+set(CMAKE_CXX_STANDARD 20)            // 设置C++标准为C++20
+add_executable(${CMAKE_PROJECT_NAME}_run main.cpp)  // 创建可执行文件
+
+include_directories(src)              // 添加头文件搜索路径
+add_subdirectory(src)                 // 添加子目录，处理src目录下的CMakeLists.txt
+add_subdirectory(tests)               // 添加tests子目录
+add_subdirectory(demo)                // 添加demo子目录
+
+// 将主可执行文件链接到库
+target_link_libraries(${CMAKE_PROJECT_NAME}_run ${CMAKE_PROJECT_NAME}_lib demo_lib)
+```
+
+### demo 目录 CMakeLists.txt
+
+```cmake
+add_library(demo_lib demo.cpp)        // 从demo.cpp创建一个名为demo_lib的库
+
+// 将demo_lib链接到项目的主库
+target_link_libraries(demo_lib ${CMAKE_PROJECT_NAME}_lib)
+```
+
+### src 目录 CMakeLists.txt
+
+```cmake
+set(HEADERS ...)                      // 定义头文件列表
+set(SOURCES ...)                      // 定义源文件列表
+
+// 创建静态库，包含所有头文件和源文件
+add_library(${CMAKE_PROJECT_NAME}_lib STATIC ${HEADERS} ${SOURCES})
+```
+
+## CMake 命令详细解释
+
+- **cmake_minimum_required**: 指定构建项目所需的最低CMake版本
+- **project**: 定义项目名称，可在后续通过`${CMAKE_PROJECT_NAME}`引用
+- **set**: 设置变量值
+- **add_executable**: 创建可执行文件，指定源文件
+- **add_library**: 创建库文件
+  - `STATIC`: 创建静态库（.a/.lib文件）
+  - 第一个参数是库名称
+  - 后续参数是组成库的源文件
+- **include_directories**: 添加头文件搜索路径
+- **add_subdirectory**: 处理指定子目录中的CMakeLists.txt
+- **target_link_libraries**: 指定目标需要链接的库
+
+## 如何在Windows上构建与运行
+
+在Windows上构建项目的步骤：
+
+1. 安装CMake和Visual Studio或MinGW
+2. 打开命令提示符或PowerShell，导航到项目根目录：
+   ```powershell
+   cd "C:\Users\hkx\OneDrive\桌面\2025Spring\Quant\Project4\OrderBook-master\OrderBook-master"
+   ```
+
+3. 创建并进入构建目录：
+   ```powershell
+   mkdir build
+   cd build
+   ```
+
+4. 生成项目文件：
+   ```powershell
+   cmake ..
+   ```
+
+5. 构建项目：
+   ```powershell
+   cmake --build . --config Release
+   ```
+
+6. 运行程序：
+   ```powershell
+   .\Release\OrderBook_run.exe
+   ```
+
+对于CSV文件问题，你可以在`demo.cpp`中使用相对路径：
+
+```cpp
+std::ofstream file("demo/final_order_book.csv");  // 从build目录
+// 或
+std::ifstream file("demo/sample_operations.csv");
+```
+
+或者将CSV文件复制到你的构建目录下，直接使用文件名。
