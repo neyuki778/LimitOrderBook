@@ -76,15 +76,15 @@ demo/CMakeFiles/demo_lib.dir/demo.cpp.obj: demo/CMakeFiles/demo_lib.dir/includes
 demo/CMakeFiles/demo_lib.dir/demo.cpp.obj: E:/Project/OrderBook-master/demo/demo.cpp
 demo/CMakeFiles/demo_lib.dir/demo.cpp.obj: demo/CMakeFiles/demo_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\Project\OrderBook-master\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object demo/CMakeFiles/demo_lib.dir/demo.cpp.obj"
-	cd /d E:\Project\OrderBook-master\build\demo && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT demo/CMakeFiles/demo_lib.dir/demo.cpp.obj -MF CMakeFiles\demo_lib.dir\demo.cpp.obj.d -o CMakeFiles\demo_lib.dir\demo.cpp.obj -c E:\Project\OrderBook-master\demo\demo.cpp
+	cd /d E:\Project\OrderBook-master\build\demo && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT demo/CMakeFiles/demo_lib.dir/demo.cpp.obj -MF CMakeFiles\demo_lib.dir\demo.cpp.obj.d -o CMakeFiles\demo_lib.dir\demo.cpp.obj -c E:\Project\OrderBook-master\demo\demo.cpp
 
 demo/CMakeFiles/demo_lib.dir/demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/demo_lib.dir/demo.cpp.i"
-	cd /d E:\Project\OrderBook-master\build\demo && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Project\OrderBook-master\demo\demo.cpp > CMakeFiles\demo_lib.dir\demo.cpp.i
+	cd /d E:\Project\OrderBook-master\build\demo && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Project\OrderBook-master\demo\demo.cpp > CMakeFiles\demo_lib.dir\demo.cpp.i
 
 demo/CMakeFiles/demo_lib.dir/demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/demo_lib.dir/demo.cpp.s"
-	cd /d E:\Project\OrderBook-master\build\demo && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Project\OrderBook-master\demo\demo.cpp -o CMakeFiles\demo_lib.dir\demo.cpp.s
+	cd /d E:\Project\OrderBook-master\build\demo && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Project\OrderBook-master\demo\demo.cpp -o CMakeFiles\demo_lib.dir\demo.cpp.s
 
 # Object files for target demo_lib
 demo_lib_OBJECTS = \

@@ -19,10 +19,10 @@ Price Order::get_price() const { return price; }
 Volume Order::get_volume() { return volume; }
 OrderStatus Order::get_status() { return status; }
 void Order::set_status(OrderStatus status) { this->status = status; }
-OrderPointer &Order::get_prev() { return prev; }
-void Order::set_prev(OrderPointer& prev) { this->prev = prev; }
-OrderPointer &Order::get_next() { return next; }
-void Order::set_next(OrderPointer& next) { this->next = next; }
+Order* Order::get_prev() { return prev; } // Return raw pointer
+void Order::set_prev(Order* prev) { this->prev = prev; } // Accept raw pointer
+Order* Order::get_next() { return next; } // Return raw pointer
+void Order::set_next(Order* next) { this->next = next; } // Accept raw pointer
 
 void Order::print() {
 	std::cout <<

@@ -38,7 +38,7 @@ if __name__ == "__main__":
     existing_order_ids = []
     operations = []
 
-    num_operations = 1_000_000
+    num_operations = 4_000_000
 
     for _ in range(num_operations):
         if random.random() < 0.8 or not existing_order_ids:  # 80% of placed orders

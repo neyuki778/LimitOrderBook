@@ -76,15 +76,15 @@ CMakeFiles/OrderBook_run.dir/main.cpp.obj: CMakeFiles/OrderBook_run.dir/includes
 CMakeFiles/OrderBook_run.dir/main.cpp.obj: E:/Project/OrderBook-master/main.cpp
 CMakeFiles/OrderBook_run.dir/main.cpp.obj: CMakeFiles/OrderBook_run.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\Project\OrderBook-master\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OrderBook_run.dir/main.cpp.obj"
-	C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OrderBook_run.dir/main.cpp.obj -MF CMakeFiles\OrderBook_run.dir\main.cpp.obj.d -o CMakeFiles\OrderBook_run.dir\main.cpp.obj -c E:\Project\OrderBook-master\main.cpp
+	C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OrderBook_run.dir/main.cpp.obj -MF CMakeFiles\OrderBook_run.dir\main.cpp.obj.d -o CMakeFiles\OrderBook_run.dir\main.cpp.obj -c E:\Project\OrderBook-master\main.cpp
 
 CMakeFiles/OrderBook_run.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OrderBook_run.dir/main.cpp.i"
-	C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Project\OrderBook-master\main.cpp > CMakeFiles\OrderBook_run.dir\main.cpp.i
+	C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Project\OrderBook-master\main.cpp > CMakeFiles\OrderBook_run.dir\main.cpp.i
 
 CMakeFiles/OrderBook_run.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OrderBook_run.dir/main.cpp.s"
-	C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Project\OrderBook-master\main.cpp -o CMakeFiles\OrderBook_run.dir\main.cpp.s
+	C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Project\OrderBook-master\main.cpp -o CMakeFiles\OrderBook_run.dir\main.cpp.s
 
 # Object files for target OrderBook_run
 OrderBook_run_OBJECTS = \

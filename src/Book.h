@@ -4,6 +4,7 @@
 #include <unordered_map>
 #include <set>
 #include "Limit.h"
+#include "boost/pool/object_pool.hpp"
 
 using PriceTree = std::set<Price>;
 using PriceLimitMap = std::unordered_map<Price, LimitPointer>;
@@ -12,16 +13,19 @@ using Orders = std::unordered_map<ID, OrderPointer>;
 class Book {
 private:
 	PriceTree buy_tree; /**< tree containing all limits of the buy side */
-	PriceLimitMap buy_limits; /**< Maps the buy limit prices to their limit objects*/
+	PriceLimitMap buy_limits; /**< Maps the buy limit prices to their limit objects (now raw pointers)*/
 
 	PriceTree sell_tree; /**< tree containing all limits of the sell side */
-	PriceLimitMap sell_limits; /**< Maps the sell limit prices to their limit objects*/
+	PriceLimitMap sell_limits; /**< Maps the sell limit prices to their limit objects (now raw pointers)*/
 
 	Price best_buy; /**< Pointer to the best (highest) buy limit */
 	Price best_sell; /**<Pointer to the best (lowest) sell limit */
 
-	Orders id_to_order; /**< Maps IDs to the corresponding order */
+	Orders id_to_order; /**< Maps IDs to the corresponding order (now raw pointers) */
 
+	boost::object_pool<Order> order_pool;
+	boost::object_pool<Limit> limit_pool;
+	
 	/**
 	 * @brief Checks if a limit is already in the buy book
 	 * @param price price limit to check
@@ -56,7 +60,7 @@ private:
 	 * @brief Inserts an order into the book at its corresponding limit price
 	 * @param order pointer to the order to place
 	 */
-	void insert_order(OrderPointer& order);
+	void insert_order(Order* order); // Accept raw pointer
 	/**
 	 * @brief Used to get a reference to a limit at a certain price, creates it if it does not exist
 	 * @param price limit price
@@ -69,16 +73,18 @@ private:
 	 * @param order pointer to the order to delete
 	 * @param is_buy true if the order is a buy order false otherwise
 	 */
-	void delete_order(OrderPointer& order, bool is_buy);
+	void delete_order(Order* order, bool is_buy); // Accept raw pointer
 
 public:
-	Book(): buy_tree(), buy_limits(), sell_tree(), sell_limits(), best_buy(0), best_sell(0) {}
+	// Increase initial chunk sizes significantly for the pools
+	Book(): buy_tree(), buy_limits(), sell_tree(), sell_limits(), best_buy(0), best_sell(0), order_pool(100000), limit_pool(10000){}
 
 	/**
 	 * @brief Places an order, tries to match it and inserts it in the book if it is not fulfilled
 	 * @param order pointer to the order to place
 	 */
-	Trades place_order(OrderPointer& order);
+	// Trades place_order(OrderPointer& order);
+	Trades place_order(ID id, ID agengt_id, OrderType type, Price price, Volume volume);
 	/**
 	 * @brief Deletes an order in the book if it is currently active
 	 * @param id id of the order to delete

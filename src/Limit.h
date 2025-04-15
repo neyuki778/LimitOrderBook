@@ -1,8 +1,8 @@
 #ifndef ORDERBOOK_LIMIT_H
 #define ORDERBOOK_LIMIT_H
 
-#include <functional>
-#include "Order.h"
+#include "Order.h" // Order.h now defines OrderPointer = Order*
+#include <functional> // Keep for cmp_limits if needed later, or remove if unused
 #include "Trade.h"
 
 class Limit {
@@ -32,7 +32,7 @@ public:
 	 * @param order order to match
 	 * @return Trades an array of trades with the matched order
 	 */
-	Trades match_order(OrderPointer& order);
+	Trades match_order(OrderPointer order);
 	/**
 	 * @brief Checks if the limit is empty (i.e. no orders)
 	 * @return true if there are no order false otherwise
@@ -48,6 +48,7 @@ public:
 	void print();
 };
 
-using LimitPointer = std::shared_ptr<Limit>;
+class Limit; // Forward declaration
+using LimitPointer = Limit*; // Use raw pointer
 
 #endif //ORDERBOOK_LIMIT_H

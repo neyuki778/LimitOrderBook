@@ -55,6 +55,7 @@ void write_final_order_book(Book& book) {
 		file << limit.first << ",BUY,"<< limit.second->get_total_volume() << "\n";
 	for (auto& limit: book.get_sell_limits())
 		file << limit.first << ",SELL,"<< limit.second->get_total_volume() << "\n";
+	file.close();
 }
 
 void demo() {
@@ -90,14 +91,23 @@ void demo() {
 			// 创建新订单。参数依次为：订单ID, agent_id(这里设为0), 买卖方向(BUY/SELL), 价格, 数量
 			// OrderPointer是std::shared_ptr<Order>的类型别名，用于智能管理Order对象的内存
 			// OrderPointer order(new Order(stoi(fields[1]), 0, stoi(fields[2]) == BUY ? BUY : SELL, stoi(fields[3]), stoi(fields[4])));
-			OrderPointer order(new Order (sv_to_num(fields[1]),0 ,sv_to_num(fields[2]) == BUY ? BUY : SELL, sv_to_num(fields[3]), sv_to_num(fields[4])));
+			// OrderPointer order(new Order (sv_to_num(fields[1]),0 ,sv_to_num(fields[2]) == BUY ? BUY : SELL, sv_to_num(fields[3]), sv_to_num(fields[4])));
 			// 将订单放入订单簿，返回产生的交易列表
 			// Trades是std::vector<Trade>的类型别名，记录了所有因此订单而产生的成交
-			Trades trades = book.place_order(order);
+			// Trades trades = book.place_order(order);
 			// 统计操作数：每笔交易算一次操作；如果订单状态为ACTIVE，表示它被插入了订单簿，也算一次操作
-			nb_op += trades.size() + (order->get_status() == ACTIVE); // each trade is an operation; if the order is active it has been inserted otherwise no operation
+
+			ID id = sv_to_num(fields[1]);
+			OrderType type = (sv_to_num(fields[2]) == BUY) ? BUY : SELL;
+			Price price = sv_to_num(fields[3]);
+			Volume volume = sv_to_num(fields[4]);
+
+			Trades trades = book.place_order(id, 0, type, price, volume);
+
+			nb_op += trades.size();
+			if (book.get_order_status(id) == ACTIVE) nb_op++;
+			 // + (order->get_status() == ACTIVE); // each trade is an operation; if the order is active it has been inserted otherwise no operation
 		} else {
-			// 删除订单（假设其他操作为DELETE）
 			book.delete_order(sv_to_num(fields[1]));
 			nb_op++;
 		}
@@ -117,3 +127,5 @@ void demo() {
 	// 将最终订单簿状态写入文件
 	write_final_order_book(book);
 }
+
+// cmake .. -G "MinGW Makefiles" -DCMAKE_CXX_FLAGS="-O2" -DCMAKE_C_FLAGS="-O2"

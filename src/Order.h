@@ -1,8 +1,10 @@
 #ifndef ORDERBOOK_ORDER_H
 #define ORDERBOOK_ORDER_H
 
-#include <memory>
 #include "Types.h"
+
+class Order; // Forward declaration
+using OrderPointer = Order*; // Use raw pointer
 
 class Order {
 private:
@@ -15,8 +17,8 @@ private:
 	OrderStatus status;  /**< Current status of the order */
 
 	/** As orders are stored in a doubly-linked list, each order stores its previous and next orders */
-	std::shared_ptr<Order> prev; /**< Previous order in the list */
-	std::shared_ptr<Order> next; /**< Next order in the list */
+	Order* prev; /**< Previous order in the list */
+	Order* next; /**< Next order in the list */
 
 public:
 	Order(ID id, ID agent_id, OrderType type, Price price, Volume volume):
@@ -41,15 +43,15 @@ public:
 	Volume get_volume();
 	OrderStatus get_status();
 	void set_status(OrderStatus status);
-	std::shared_ptr<Order> &get_prev();
-	void set_prev(std::shared_ptr<Order> &prev);
-	std::shared_ptr<Order> &get_next();
-	void set_next(std::shared_ptr<Order> &next);
+	Order* get_prev(); // Return raw pointer
+	void set_prev(Order* prev); // Accept raw pointer
+	Order* get_next(); // Return raw pointer
+	void set_next(Order* next); // Accept raw pointer
 
 	/** Print method */
 	void print();
 };
 
-using OrderPointer = std::shared_ptr<Order>;
+// using OrderPointer = Order*; // Replaced by alias at line 7
 
 #endif //ORDERBOOK_ORDER_H

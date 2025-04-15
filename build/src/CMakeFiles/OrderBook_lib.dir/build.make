@@ -76,45 +76,45 @@ src/CMakeFiles/OrderBook_lib.dir/Book.cpp.obj: src/CMakeFiles/OrderBook_lib.dir/
 src/CMakeFiles/OrderBook_lib.dir/Book.cpp.obj: E:/Project/OrderBook-master/src/Book.cpp
 src/CMakeFiles/OrderBook_lib.dir/Book.cpp.obj: src/CMakeFiles/OrderBook_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\Project\OrderBook-master\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/OrderBook_lib.dir/Book.cpp.obj"
-	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/OrderBook_lib.dir/Book.cpp.obj -MF CMakeFiles\OrderBook_lib.dir\Book.cpp.obj.d -o CMakeFiles\OrderBook_lib.dir\Book.cpp.obj -c E:\Project\OrderBook-master\src\Book.cpp
+	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/OrderBook_lib.dir/Book.cpp.obj -MF CMakeFiles\OrderBook_lib.dir\Book.cpp.obj.d -o CMakeFiles\OrderBook_lib.dir\Book.cpp.obj -c E:\Project\OrderBook-master\src\Book.cpp
 
 src/CMakeFiles/OrderBook_lib.dir/Book.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OrderBook_lib.dir/Book.cpp.i"
-	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Project\OrderBook-master\src\Book.cpp > CMakeFiles\OrderBook_lib.dir\Book.cpp.i
+	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Project\OrderBook-master\src\Book.cpp > CMakeFiles\OrderBook_lib.dir\Book.cpp.i
 
 src/CMakeFiles/OrderBook_lib.dir/Book.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OrderBook_lib.dir/Book.cpp.s"
-	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Project\OrderBook-master\src\Book.cpp -o CMakeFiles\OrderBook_lib.dir\Book.cpp.s
+	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Project\OrderBook-master\src\Book.cpp -o CMakeFiles\OrderBook_lib.dir\Book.cpp.s
 
 src/CMakeFiles/OrderBook_lib.dir/Limit.cpp.obj: src/CMakeFiles/OrderBook_lib.dir/flags.make
 src/CMakeFiles/OrderBook_lib.dir/Limit.cpp.obj: src/CMakeFiles/OrderBook_lib.dir/includes_CXX.rsp
 src/CMakeFiles/OrderBook_lib.dir/Limit.cpp.obj: E:/Project/OrderBook-master/src/Limit.cpp
 src/CMakeFiles/OrderBook_lib.dir/Limit.cpp.obj: src/CMakeFiles/OrderBook_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\Project\OrderBook-master\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/OrderBook_lib.dir/Limit.cpp.obj"
-	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/OrderBook_lib.dir/Limit.cpp.obj -MF CMakeFiles\OrderBook_lib.dir\Limit.cpp.obj.d -o CMakeFiles\OrderBook_lib.dir\Limit.cpp.obj -c E:\Project\OrderBook-master\src\Limit.cpp
+	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/OrderBook_lib.dir/Limit.cpp.obj -MF CMakeFiles\OrderBook_lib.dir\Limit.cpp.obj.d -o CMakeFiles\OrderBook_lib.dir\Limit.cpp.obj -c E:\Project\OrderBook-master\src\Limit.cpp
 
 src/CMakeFiles/OrderBook_lib.dir/Limit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OrderBook_lib.dir/Limit.cpp.i"
-	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Project\OrderBook-master\src\Limit.cpp > CMakeFiles\OrderBook_lib.dir\Limit.cpp.i
+	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Project\OrderBook-master\src\Limit.cpp > CMakeFiles\OrderBook_lib.dir\Limit.cpp.i
 
 src/CMakeFiles/OrderBook_lib.dir/Limit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OrderBook_lib.dir/Limit.cpp.s"
-	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Project\OrderBook-master\src\Limit.cpp -o CMakeFiles\OrderBook_lib.dir\Limit.cpp.s
+	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Project\OrderBook-master\src\Limit.cpp -o CMakeFiles\OrderBook_lib.dir\Limit.cpp.s
 
 src/CMakeFiles/OrderBook_lib.dir/Order.cpp.obj: src/CMakeFiles/OrderBook_lib.dir/flags.make
 src/CMakeFiles/OrderBook_lib.dir/Order.cpp.obj: src/CMakeFiles/OrderBook_lib.dir/includes_CXX.rsp
 src/CMakeFiles/OrderBook_lib.dir/Order.cpp.obj: E:/Project/OrderBook-master/src/Order.cpp
 src/CMakeFiles/OrderBook_lib.dir/Order.cpp.obj: src/CMakeFiles/OrderBook_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\Project\OrderBook-master\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/OrderBook_lib.dir/Order.cpp.obj"
-	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/OrderBook_lib.dir/Order.cpp.obj -MF CMakeFiles\OrderBook_lib.dir\Order.cpp.obj.d -o CMakeFiles\OrderBook_lib.dir\Order.cpp.obj -c E:\Project\OrderBook-master\src\Order.cpp
+	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/OrderBook_lib.dir/Order.cpp.obj -MF CMakeFiles\OrderBook_lib.dir\Order.cpp.obj.d -o CMakeFiles\OrderBook_lib.dir\Order.cpp.obj -c E:\Project\OrderBook-master\src\Order.cpp
 
 src/CMakeFiles/OrderBook_lib.dir/Order.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OrderBook_lib.dir/Order.cpp.i"
-	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Project\OrderBook-master\src\Order.cpp > CMakeFiles\OrderBook_lib.dir\Order.cpp.i
+	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Project\OrderBook-master\src\Order.cpp > CMakeFiles\OrderBook_lib.dir\Order.cpp.i
 
 src/CMakeFiles/OrderBook_lib.dir/Order.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OrderBook_lib.dir/Order.cpp.s"
-	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Project\OrderBook-master\src\Order.cpp -o CMakeFiles\OrderBook_lib.dir\Order.cpp.s
+	cd /d E:\Project\OrderBook-master\build\src && C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Project\OrderBook-master\src\Order.cpp -o CMakeFiles\OrderBook_lib.dir\Order.cpp.s
 
 # Object files for target OrderBook_lib
 OrderBook_lib_OBJECTS = \
