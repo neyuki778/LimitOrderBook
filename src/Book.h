@@ -77,7 +77,7 @@ private:
 
 public:
 	// Increase initial chunk sizes significantly for the pools
-	Book(): buy_tree(), buy_limits(), sell_tree(), sell_limits(), best_buy(0), best_sell(0), order_pool(100000), limit_pool(10000){}
+	Book(): buy_tree(), buy_limits(), sell_tree(), sell_limits(), best_buy(0), best_sell(0), order_pool(2048), limit_pool(512){}
 
 	/**
 	 * @brief Places an order, tries to match it and inserts it in the book if it is not fulfilled

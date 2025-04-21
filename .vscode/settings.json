@@ -92,5 +92,6 @@
     },
     "intel-corporation.oneapi-analysis-configurator.binary-path": "e:\\Project\\OrderBook-master\\build\\OrderBook_run.exe",
     "intel-corporation.oneapi-analysis-configurator.vtune.install-root": "C:\\Program Files (x86)\\Intel\\oneAPI\\vtune\\latest",
-    "intel-corporation.oneapi-analysis-configurator.vtune.project-folder": "e:\\Project\\OrderBook-master\\vtune"
+    "intel-corporation.oneapi-analysis-configurator.vtune.project-folder": "e:\\Project\\OrderBook-master\\vtune",
+    "git.ignoreLimitWarning": true
 }
