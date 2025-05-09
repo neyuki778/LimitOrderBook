@@ -13,3 +13,6 @@ add_subdirectory(src)
 add_subdirectory(demo)
 
 target_link_libraries(${CMAKE_PROJECT_NAME}_run ${CMAKE_PROJECT_NAME}_lib demo_lib)
+
+# cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release ..
+# cmake --build . --parallel
