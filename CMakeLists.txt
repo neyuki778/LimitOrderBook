@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.28)
 project(OrderBook)
 
 set(CMAKE_CXX_STANDARD 20)
+
+# Enable aggressive optimization
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG -march=native -flto")
+set(CMAKE_BUILD_TYPE Release)
 add_executable(${CMAKE_PROJECT_NAME}_run main.cpp)
 
 target_include_directories(${CMAKE_PROJECT_NAME}_run PRIVATE ${CMAKE_SOURCE_DIR})

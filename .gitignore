@@ -1,3 +1,10 @@
 /cmake-build-debug/
 /.idea/
 /*.zip/
+build/
+
+# Claude Code related files
+.claude/
+CLAUDE.md
+*.claude
+.claude-*
