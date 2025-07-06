@@ -1,2 +1,0 @@
-C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\ar.exe qc libOrderBook_lib.a CMakeFiles/OrderBook_lib.dir/Book.cpp.obj CMakeFiles/OrderBook_lib.dir/Limit.cpp.obj CMakeFiles/OrderBook_lib.dir/Order.cpp.obj
-C:\Users\hkx\AppData\Local\Programs\MICROS~1\mingw64\bin\ranlib.exe libOrderBook_lib.a
