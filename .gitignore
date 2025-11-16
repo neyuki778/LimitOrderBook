@@ -2,7 +2,7 @@
 /.idea/
 /*.zip/
 build/
-
+*DS_Store
 # Claude Code related files
 .claude/
 CLAUDE.md
